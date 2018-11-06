@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+    $('.message-bar span').on('click', function(){
+        $(this).closest('.message-bar').hide();
+    });
+    $('input[type="file"]').on('change', function(){
+        $('.message-bar').hide();
+    });
+    $(function(){
+        $('#form-export').submit();
+    });
+</script>
+{% endblock %}

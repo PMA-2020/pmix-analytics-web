@@ -1,0 +1,1 @@
+"""Static utility functions."""
